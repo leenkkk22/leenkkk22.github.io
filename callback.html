@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>인증 처리 중...</title>
+</head>
+<body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+
+        if (code) {       
+            const localRedirectUri = "http://localhost:8081/kbay/member/auth/callback";
+            location.href = `${localRedirectUri}?code=${code}`;
+        } else {
+            alert("인증 코드를 찾을 수 없습니다.");
+        }
+    </script>
+</body>
+</html>
