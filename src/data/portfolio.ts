@@ -1,8 +1,8 @@
 export const site = {
-  name: 'Developer',
+  name: '이인호',
   title: 'Backend · Full-stack Developer',
   description: 'Java/Spring 기반 백엔드와 React를 활용한 풀스택 개발자 포트폴리오',
-  email: 'your.email@example.com',
+  email: 'inho156@naver.com',
   github: 'https://github.com/leenkkk22',
   linkedin: '',
   resumeUrl: '',
@@ -16,10 +16,10 @@ export const about = {
 };
 
 export const skills = [
-  { category: 'Backend', items: ['Java', 'Spring Boot', 'Spring Security', 'JPA', 'MyBatis'] },
+  { category: 'Backend', items: ['Java', 'Spring Boot', 'Spring Security', 'MyBatis'] },
   { category: 'Frontend', items: ['React', 'TypeScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Database', items: ['MySQL', 'PostgreSQL', 'Redis'] },
-  { category: 'DevOps & Tools', items: ['Git', 'GitHub Actions', 'Docker', 'Linux'] },
+  { category: 'Database', items: ['MySQL', 'Redis'] },
+  { category: 'DevOps & Tools', items: ['Git', 'GitHub Actions', 'Docker'] },
 ];
 
 export interface Project {
@@ -33,25 +33,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: '프로젝트 A',
-    description: 'Spring Boot 기반 REST API와 React 프론트엔드를 연동한 웹 서비스입니다. JWT 인증, CRUD, 파일 업로드 기능을 구현했습니다.',
-    techStack: ['Java', 'Spring Boot', 'React', 'MySQL'],
-    githubUrl: 'https://github.com/leenkkk22',
-    highlight: 'JWT 인증 · REST API',
+    title: 'K-Bay Action',
+    description:
+      '실시간 웹 비크리 경매 플랫폼입니다. Redisson 분산 락으로 실시간 동시 입찰을 처리하고, Redis Pub/Sub과 WebSocket(STOMP)으로 실시간 현재가를 반영합니다. Spring Security 세션 인증, Iamport 본인인증(등록조건), Toss Payment 결제 시스템, 낙찰 물품 승계/유찰 처리까지 end-to-end로 구현한 프로젝트입니다.',
+    techStack: [
+      'Java', 'Spring MVC', 'Spring Security', 'MyBatis',
+      'Oracle', 'Redis', 'Redisson', 'WebSocket', 'STOMP', 'JSP',
+    ],
+    highlight: '비크리 경매 · Redis · WebSocket',
   },
   {
-    title: '프로젝트 B',
-    description: '실시간 데이터 처리와 캐싱을 적용한 백엔드 서비스입니다. Redis를 활용한 세션/캐시 관리로 응답 속도를 개선했습니다.',
-    techStack: ['Java', 'Spring Boot', 'Redis', 'PostgreSQL'],
-    githubUrl: 'https://github.com/leenkkk22',
-    highlight: 'Redis 캐싱',
-  },
-  {
-    title: '프로젝트 C',
-    description: '팀 협업 프로젝트로 기획부터 배포까지 전 과정을 경험했습니다. Git Flow, 코드 리뷰, CI/CD 파이프라인을 적용했습니다.',
-    techStack: ['React', 'TypeScript', 'Spring Boot', 'Docker'],
-    githubUrl: 'https://github.com/leenkkk22',
-    highlight: 'CI/CD · Docker',
+    title: 'KH증권 모의 투자 플랫폼',
+    description:
+      '실시간 모의 주식 투자 서비스로 토스증권 클론 프로젝트입니다. 한국투자증권(KIS) Open API·WebSocket으로 실시간 시세를 수집하고, Oracle·Redis 3단계 캐시로 API 호출을 최소화했습니다. JWT·카카오 OAuth 인증, 시장가/지정가 모의 매매, 모의투자 수익률 랭킹, Naver 검색 API를 통한 경제 뉴스 연동, AI 종목 리포트·투자성향 분석 기능을 포함하고 있습니다.',
+    techStack: [
+      'Java', 'Spring Boot', 'Spring Security', 'MyBatis',
+      'Oracle', 'Redis', 'JWT', 'OAuth2', 'WebSocket', 'Next.js',
+    ],
+    highlight: 'KIS 실시간 시세 · 모의투자 · JWT/OAuth',
   },
 ];
 
