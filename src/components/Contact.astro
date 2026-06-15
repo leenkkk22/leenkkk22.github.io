@@ -1,0 +1,36 @@
+---
+import { site } from '../data/portfolio';
+---
+
+<section id="contact" class="section-container border-t border-surface-border/40">
+  <h2 class="section-title">Contact</h2>
+  <p class="mb-8 max-w-lg text-base text-gray-400">
+    프로젝트 협업, 채용 문의, 또는 기술 관련 대화를 환영합니다.
+  </p>
+  <div class="flex flex-wrap gap-4">
+    <a href={`mailto:${site.email}`} class="btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      {site.email}
+    </a>
+    <a
+      href={site.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn-outline"
+    >
+      GitHub
+    </a>
+    {
+      site.linkedin && (
+        <a
+          href={site.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-outline"
+        >
+          LinkedIn
+        </a>
+      )
+    }
+  </div>
+</section>

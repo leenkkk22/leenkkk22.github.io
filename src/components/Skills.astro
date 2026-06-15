@@ -1,0 +1,21 @@
+---
+import { skills } from '../data/portfolio';
+---
+
+<section id="skills" class="section-container border-t border-surface-border/40">
+  <h2 class="section-title">Skills</h2>
+  <div class="grid gap-6 sm:grid-cols-2">
+    {skills.map((group) => (
+      <div class="card">
+        <h3 class="mb-4 font-mono text-sm font-semibold text-accent">{group.category}</h3>
+        <ul class="flex flex-wrap gap-2">
+          {group.items.map((skill) => (
+            <li class="rounded-md bg-surface px-3 py-1.5 text-sm text-gray-300 ring-1 ring-surface-border">
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
