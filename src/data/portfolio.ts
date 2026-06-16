@@ -48,7 +48,7 @@ export const projects: Project[] = [
     description:'실시간 모의 주식 투자 서비스로 토스증권 클론 프로젝트입니다. 한국투자증권(KIS) Open API·WebSocket으로 실시간 시세를 수집하고, Oracle·Redis 3단계 캐시로 API 호출을 최소화했습니다. JWT·카카오 OAuth 인증, 시장가/지정가 모의 매매, 수익률 랭킹, Naver 뉴스 연동, AI 종목 리포트·투자성향 분석을 포함한 KH 파이널 프로젝트입니다.',
     techStack: [
       '#Java', '#Spring Boot', '#Spring Security', '#MyBatis',
-      'Oracle', 'Redis', 'JWT', 'OAuth2', 'WebSocket', 'Next.js',
+      '#Oracle', '#Redis', '#JWT', '#OAuth2', '#WebSocket', '#Next.js',
     ],
     highlight: 'KIS 실시간 시세 · 모의투자 · JWT/OAuth',
   },
